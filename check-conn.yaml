@@ -1,6 +1,5 @@
----
-    hosts: "{{ single_host }}"
-    gather_facts: no  # Disable facts gathering for this playbook
-    tasks:
-      - name: Ping the Host
-        shell: 'echo Hello World!'
+- hosts: "{{ single_host }}"
+  gather_facts: no  # Disable facts gathering for this playbook
+  tasks:
+    - name: Ping the Host
+      shell: 'echo Hello World!'
