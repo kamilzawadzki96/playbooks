@@ -1,6 +1,5 @@
 ---
-- name: Check Connection to Remote Host
-  hosts: "{{ single_host }}"
+hosts: "{{ single_host }}"
   gather_facts: no  # Disable facts gathering for this playbook
   tasks:
     - name: Ping the Host
